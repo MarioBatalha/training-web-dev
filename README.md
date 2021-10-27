@@ -44,7 +44,7 @@ $ git clone https://github.com/MarioBatalha/training-web-dev
 $ npm install
 
 # Go into the repository
-$ cd mochi-test
+$ cd training-web-dev
 
 # how to run Aplication
 $ npm run dev
