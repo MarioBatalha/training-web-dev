@@ -23,12 +23,14 @@ a {
   display: flex;
 }
 
-ul {
+.content-actions {
   gap: 2rem;
   align-items: center;
   list-style: none;
   display: flex;
   margin: 0.5rem;
+  padding: 0;
+  justify-content: center;
 }
 
 .container a:hover {
@@ -62,20 +64,24 @@ ul {
 
 main {
   display: flex;
+  margin-top: 4rem;
 }
 
 .content-info {
   width: 50%;
+  margin-left: 2rem;
 }
 
 .content-info h1 {
   font-weight: bold;
   font-size: 58pt;
   padding: 2rem;
+  margin: 0;
 }
 
 p {
   padding: 1rem;
+  line-height: 1.6;
 }
 
 .free {
@@ -95,7 +101,7 @@ p {
 }
 
 .content-img {
-  width: 40%;
+  width: 80%;
   margin-right: 2rem;
   background: url("./asset//img/person.png") no-repeat;
   background-position-x: 20%;
