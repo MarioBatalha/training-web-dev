@@ -65,7 +65,6 @@ main {
 }
 
 .content-info {
-  margin-top: 20rem;
   width: 50%;
 }
 
@@ -96,7 +95,7 @@ p {
 }
 
 .content-img {
-  width: 50%;
+  width: 40%;
   margin-right: 2rem;
   background: url("./asset//img/person.png") no-repeat;
   background-position-x: 20%;
