@@ -23,7 +23,8 @@ a {
   display: flex;
 }
 
-.content-actions {
+.content-actions,
+.nav-links {
   gap: 2rem;
   align-items: center;
   list-style: none;
@@ -31,6 +32,10 @@ a {
   margin: 0.5rem;
   padding: 0;
   justify-content: center;
+}
+
+.nav-links {
+  margin: 1rem 3rem;
 }
 
 .container a:hover {
