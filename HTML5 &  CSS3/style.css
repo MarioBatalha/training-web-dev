@@ -39,46 +39,46 @@ li {
 }
 
 main {
-    display: flex;
+  display: flex;
 }
 
 .content-info {
-    margin-top: 20rem;
-    width: 50%;
+  margin-top: 20rem;
+  width: 50%;
 }
 
 .content-info h1 {
-    font-weight: bold;
-    font-size: 58pt;
-    padding: 2rem;
+  font-weight: bold;
+  font-size: 58pt;
+  padding: 2rem;
 }
 
 p {
-    padding: 1rem;   
+  padding: 1rem;
 }
 
 .started {
-    background: rgb(3, 70, 31);
-    padding: 1rem;
-    width: 6rem;
-    border-radius: 10px;
-    color: #FFF;
-    text-align: center;
-    text-decoration: none;
+  background: rgb(3, 70, 31);
+  padding: 1rem;
+  width: 6rem;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
 }
 
 .free {
-    padding: 1rem;
-    width: 6rem;
-    color: #000;
-    text-align: center;
-    text-decoration: none;
+  padding: 1rem;
+  width: 6rem;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
 }
 
-.content-img{
-    width: 50%;
-    margin-right: 2rem;
-    background: url('./asset//img/person.png') no-repeat;
-    background-position-x: 20%;
-    background-clip: cover;
+.content-img {
+  width: 50%;
+  margin-right: 2rem;
+  background: url("./asset//img/person.png") no-repeat;
+  background-position-x: 20%;
+  background-clip: cover;
 }
