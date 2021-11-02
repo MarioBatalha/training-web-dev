@@ -34,6 +34,14 @@ This project was developed with the following technologies:
 
 - Where type is: [ `build`, `chore`, `ci`, `docs`, `feat`, `fix`, `perf`, `refactor`, `revert`, `style`, `test` ]
 - And commit-message must be written in lower-case.
+
+# Naming convention
+- Pascal naming convention for folder.
+- camelCase for function.
+- ProperCase for class. 
+- lower-case separated by dash for class and id.
+- Initial-uppercase and word separated by dash for files .html, .css, .scss, .js and others.
+- UPPERCASE for environment variables.
 ## :information_source: How To Use
 
 ```bash
