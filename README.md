@@ -35,7 +35,7 @@ This project was developed with the following technologies:
 - Where type is: [ `build`, `chore`, `ci`, `docs`, `feat`, `fix`, `perf`, `refactor`, `revert`, `style`, `test` ]
 - And commit-message must be written in lower-case.
 
-# Naming convention
+## Naming convention
 - Pascal naming convention for folder.
 - camelCase for function.
 - ProperCase for class. 
