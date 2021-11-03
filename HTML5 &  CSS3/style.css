@@ -1,7 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+:root {
+  --primary-color: #03461f;
+  --font-family: Roboto, sans-serif;
+  --nav-links-gap: 2rem;
+  --button-border-radius: 10px;
+  --transition-time: 300ms;
+}
+
 * {
-  font-family: Roboto, sans-serif;
+  font-family: var(--font-family);
 }
 
 a {
@@ -25,7 +33,7 @@ a {
 
 .content-actions,
 .nav-links {
-  gap: 2rem;
+  gap: var(--nav-links-gap);
   align-items: center;
   list-style: none;
   display: flex;
@@ -43,12 +51,12 @@ a {
 }
 
 .btn {
-  border-radius: 10px;
+  border-radius: var(--button-border-radius);
   padding: 0.9rem;
   width: 4rem;
   height: 1rem;
   text-align: center;
-  transition: all 300ms;
+  transition: all var(--transition-time);
 }
 
 .btn:hover {
@@ -64,7 +72,7 @@ a {
 .btn.started {
   width: 6rem;
   color: #fff;
-  background: #03461f;
+  background: var(--primary-color);
 }
 
 main {
@@ -95,9 +103,9 @@ p {
   color: #000;
   text-align: center;
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: var(--button-border-radius);
   border: 1px solid #000;
-  transition: all 300ms ease-in-out;
+  transition: all var(--transition-time) ease-in-out;
 }
 
 .free:hover {
