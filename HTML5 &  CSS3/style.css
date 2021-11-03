@@ -108,7 +108,7 @@ p {
 .content-img {
   width: 80%;
   margin-right: 2rem;
-  background: url("./asset//img/person.png") no-repeat;
+  background: url("./Asset/img/person.png") no-repeat;
   background-position-x: 20%;
   background-clip: cover;
 }
