@@ -48,15 +48,6 @@ This project was developed with the following technologies:
 # Clone this repository
 $ git clone https://github.com/MarioBatalha/training-web-dev
 
-# how to install dependencies
-$ npm install
-
-# Go into the repository
-$ cd training-web-dev
-
-# how to run Aplication
-$ npm run dev
-
 ```
 
 ## All Rights Reserved for NSDev.
