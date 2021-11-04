@@ -127,3 +127,16 @@ main {
 .content-img {
   flex: 3;
 }
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .content-img {
+    display: none;
+  }
+}
