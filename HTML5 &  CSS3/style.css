@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+/* ==================== Variáveis ====================  */
+
 :root {
   --primary-color: #03461f;
   --black: #000;
@@ -7,8 +9,11 @@
   --font-family: Roboto, sans-serif;
   --nav-links-gap: 2rem;
   --button-border-radius: 10px;
+  --btn-opacity-transition: 0.85;
   --transition-time: 300ms;
 }
+
+/* ==================== Reset ====================  */
 
 * {
   font-family: var(--font-family);
@@ -19,14 +24,67 @@ a {
   color: var(--black);
 }
 
+p {
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+/* ==================== Utilidades ====================  */
+
 .container {
   position: relative;
   max-width: 100vw;
   height: auto;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+/* ==================== Botões ====================  */
+
+.btn {
+  border-radius: var(--button-border-radius);
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  transition: all var(--transition-time) ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  text-decoration: none;
+  opacity: var(--btn-opacity-transition);
+}
+
+.btn.black {
+  color: var(--white);
+  background: var(--black);
+}
+
+.btn.started {
+  color: var(--white);
+  background: var(--primary-color);
+}
+
+.btn.transparent {
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.btn.transparent:hover {
+  opacity: 1;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+/* ==================== Conteúdo ====================  */
+main {
+  display: flex;
+  margin-top: 4rem;
 }
 
 .content-right {
@@ -48,40 +106,6 @@ a {
   margin: 1rem 3rem;
 }
 
-.container a:hover {
-  text-decoration: underline;
-}
-
-.btn {
-  border-radius: var(--button-border-radius);
-  padding: 0.9rem;
-  width: 4rem;
-  height: 1rem;
-  text-align: center;
-  transition: all var(--transition-time);
-}
-
-.btn:hover {
-  text-decoration: none;
-  opacity: 0.9;
-}
-
-.btn.black {
-  color: var(--white);
-  background: var(--black);
-}
-
-.btn.started {
-  width: 6rem;
-  color: var(--white);
-  background: var(--primary-color);
-}
-
-main {
-  display: flex;
-  margin-top: 4rem;
-}
-
 .content-info {
   width: 50%;
   margin-left: 2rem;
@@ -92,27 +116,6 @@ main {
   font-size: 58pt;
   padding: 2rem;
   margin: 0;
-}
-
-p {
-  padding: 1rem;
-  line-height: 1.6;
-}
-
-.free {
-  padding: 1rem;
-  width: 6rem;
-  color: var(--black);
-  text-align: center;
-  text-decoration: none;
-  border-radius: var(--button-border-radius);
-  border: 1px solid var(--black);
-  transition: all var(--transition-time) ease-in-out;
-}
-
-.free:hover {
-  color: var(--white);
-  background-color: var(--black);
 }
 
 .content-img {
