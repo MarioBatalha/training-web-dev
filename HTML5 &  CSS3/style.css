@@ -2,6 +2,8 @@
 
 :root {
   --primary-color: #03461f;
+  --black: #000;
+  --white: #fff;
   --font-family: Roboto, sans-serif;
   --nav-links-gap: 2rem;
   --button-border-radius: 10px;
@@ -14,7 +16,7 @@
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--black);
 }
 
 .container {
@@ -65,13 +67,13 @@ a {
 }
 
 .btn.black {
-  color: #fff;
-  background: #000;
+  color: var(--white);
+  background: var(--black);
 }
 
 .btn.started {
   width: 6rem;
-  color: #fff;
+  color: var(--white);
   background: var(--primary-color);
 }
 
@@ -100,17 +102,17 @@ p {
 .free {
   padding: 1rem;
   width: 6rem;
-  color: #000;
+  color: var(--black);
   text-align: center;
   text-decoration: none;
   border-radius: var(--button-border-radius);
-  border: 1px solid #000;
+  border: 1px solid var(--black);
   transition: all var(--transition-time) ease-in-out;
 }
 
 .free:hover {
-  color: #fff;
-  background-color: #000;
+  color: var(--white);
+  background-color: var(--black);
 }
 
 .content-img {
