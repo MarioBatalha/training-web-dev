@@ -140,3 +140,23 @@ main {
     display: none;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .container {
+    justify-content: center;
+    gap: var(--nav-links-gap);
+  }
+
+  .nav-links {
+    margin: 1rem 0;
+  }
+
+  main {
+    width: 85%;
+    margin: 2rem auto;
+  }
+
+  .content-info h1 {
+    padding: 0;
+  }
+}
