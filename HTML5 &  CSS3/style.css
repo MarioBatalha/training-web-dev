@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-
+:root {
+  --primary-color: #03461f;
+  --black: #000;
+  --white: #fff;
+  --font-family: Roboto, sans-serif;
+  --nav-links-gap: 2rem;
+  --button-border-radius: 10px;
+  --btn-opacity-transition: 0.85;
+  --transition-time: 300ms;
+}
 * {
-  font-family: Roboto, sans-serif;
+  font-family: var(--font-family);
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--black);
 }
 
 .container {
