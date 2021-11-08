@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+:root {
+    --primary-color: #03461f;
+    --black: #000;
+    --white: #fff;
+    --font-family: Roboto, sans-serif;
+    --nav-links-gap: 2rem;
+    --button-border-radius: 10px;
+    --btn-opacity-transition: 0.85;
+    --transition-time: 300ms;
+    --subtitle-text: #707070;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: var(--white);
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    position: relative;
+}
+
+aside h4 {
+    position: absolute;
+    color: var(--white);
+    bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    opacity: 0.4;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 4rem;
+}
+
+.form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-header h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.563rem;
+    font-weight: 600;
+}
+
+.form-header h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.form-header p {
+    font-size: 0.6rem;
+    color: var(--subtitle-text);
+    font-weight: 500;
+    text-align: justify;
+    margin: 0.5rem 0 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    padding: 0.4rem 0.6rem;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    outline: none;
+}
+
+.input-box-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-box-row label {
+    color: #707070;
+}
+
+label {
+    font-weight: 500;
+}
+
+.input-box button {
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.7rem 0.7rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.checkboxes a {
+    color: var(--primary-color);
+}
