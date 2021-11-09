@@ -1,31 +1,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+/* ==================== Variáveis ====================  */
+
+:root {
+  --primary-color: #03461f;
+  --black: #000;
+  --white: #fff;
+  --font-family: Roboto, sans-serif;
+  --nav-links-gap: 2rem;
+  --button-border-radius: 10px;
+  --btn-opacity-transition: 0.85;
+  --transition-time: 300ms;
+}
+
+/* ==================== Reset ====================  */
+
 * {
-  font-family: Roboto, sans-serif;
+  font-family: var(--font-family);
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--black);
 }
+
+p {
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* ==================== Utilidades ====================  */
 
 .container {
   position: relative;
   max-width: 100vw;
   height: auto;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.content-right {
+.container a:hover {
+  text-decoration: underline;
+}
+
+/* ==================== Botões ====================  */
+
+.btn {
+  border-radius: var(--button-border-radius);
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  text-align: center;
+  transition: all var(--transition-time) ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  text-decoration: none;
+  opacity: var(--btn-opacity-transition);
+}
+
+.btn.black {
+  color: var(--white);
+  background: var(--black);
+}
+
+.btn.started {
+  color: var(--white);
+  background: var(--primary-color);
+}
+
+.btn.transparent {
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.btn.transparent:hover {
+  opacity: 1;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+/* ==================== Conteúdo ====================  */
+main {
+  display: flex;
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.content-left {
   display: flex;
 }
 
 .content-actions,
 .nav-links {
-  gap: 2rem;
+  gap: var(--nav-links-gap);
   align-items: center;
   list-style: none;
   display: flex;
@@ -38,43 +113,8 @@ a {
   margin: 1rem 3rem;
 }
 
-.container a:hover {
-  text-decoration: underline;
-}
-
-.btn {
-  border-radius: 10px;
-  padding: 0.9rem;
-  width: 4rem;
-  height: 1rem;
-  text-align: center;
-  transition: all 300ms;
-}
-
-.btn:hover {
-  text-decoration: none;
-  opacity: 0.9;
-}
-
-.btn.black {
-  color: #fff;
-  background: #000;
-}
-
-.btn.started {
-  width: 6rem;
-  color: #fff;
-  background: #03461f;
-}
-
-main {
-  display: flex;
-  margin-top: 4rem;
-}
-
 .content-info {
-  width: 50%;
-  margin-left: 2rem;
+  flex: 2;
 }
 
 .content-info h1 {
@@ -84,31 +124,39 @@ main {
   margin: 0;
 }
 
-p {
-  padding: 1rem;
-  line-height: 1.6;
-}
-
-.free {
-  padding: 1rem;
-  width: 6rem;
-  color: #000;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 10px;
-  border: 1px solid #000;
-  transition: all 300ms ease-in-out;
-}
-
-.free:hover {
-  color: #fff;
-  background-color: #000;
-}
-
 .content-img {
-  width: 80%;
-  margin-right: 2rem;
-  background: url("./asset//img/person.png") no-repeat;
-  background-position-x: 20%;
-  background-clip: cover;
+  flex: 3;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .content-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    justify-content: center;
+    gap: var(--nav-links-gap);
+  }
+
+  .nav-links {
+    margin: 1rem 0;
+  }
+
+  main {
+    width: 85%;
+    margin: 2rem auto;
+  }
+
+  .content-info h1 {
+    padding: 0;
+  }
 }
