@@ -139,7 +139,11 @@ label {
     border-radius: var(--button-border-radius);
     font-size: 1rem;
     width: 100%;
+<<<<<<< HEAD
     transition: background-color 0.8s;
+=======
+    transition: background-color 1s;
+>>>>>>> eba8fb0dd918bcca00d3b23169292ce531443fc5
 }
 
 .input-box button:hover {
