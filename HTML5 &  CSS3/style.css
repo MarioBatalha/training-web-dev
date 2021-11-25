@@ -126,6 +126,7 @@ main {
 
 .content-img {
   width: 65%;
+  max-width: 800px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -158,5 +159,15 @@ main {
 
   .content-info h1 {
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 80%;
+  }
+  .container {
+    gap: 0;
+    flex-wrap: wrap;
   }
 }
