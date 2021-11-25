@@ -13,7 +13,6 @@
   --transition-time: 300ms;
 }
 
-
 /* ==================== Reset ====================  */
 
 * {
@@ -120,13 +119,13 @@ main {
 
 .content-info h1 {
   font-weight: bold;
-  font-size: 58pt;
+  font-size: 58px;
   padding: 2rem;
   margin: 0;
 }
 
 .content-img {
-  flex: 3;
+  width: 65%;
 }
 
 @media screen and (max-width: 1200px) {
