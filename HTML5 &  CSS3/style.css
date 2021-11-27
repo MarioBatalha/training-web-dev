@@ -13,7 +13,6 @@
   --transition-time: 300ms;
 }
 
-
 /* ==================== Reset ====================  */
 
 * {
@@ -120,13 +119,14 @@ main {
 
 .content-info h1 {
   font-weight: bold;
-  font-size: 58pt;
+  font-size: 58px;
   padding: 2rem;
   margin: 0;
 }
 
 .content-img {
-  flex: 3;
+  width: 65%;
+  max-width: 800px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -159,5 +159,15 @@ main {
 
   .content-info h1 {
     padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 80%;
+  }
+  .container {
+    gap: 0;
+    flex-wrap: wrap;
   }
 }
